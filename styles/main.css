@@ -46,7 +46,9 @@ header {
     width: 100%;
     color: aqua;
     font-size: 2rem;
-    top: calc(50% + 30px); }
+    top: calc(50% + 30px);
+    font-family: "Slackey", cursive;
+    text-shadow: -2px 2px rgba(255, 255, 255, 0.3); }
   header nav {
     margin-top: -450px;
     z-index: 700;
@@ -106,8 +108,8 @@ header {
   width: 100%;
   padding: 10px 0px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)), url(../assets/images/IMG_0542.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed; }
+  background-size: cover;
+  background-position: center center; }
   .image-row h1 {
     text-align: center;
     color: black;
@@ -174,7 +176,8 @@ footer {
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px; }
+  bottom: 0px;
+  cursor: pointer; }
 
 iframe {
   margin-left: 5%;
@@ -212,7 +215,9 @@ iframe {
       color: white;
       font-size: 3rem;
       top: 0;
-      right: 10px; }
+      right: 10px;
+      pointer-events: all;
+      cursor: pointer; }
     .black-box .pop-image .thanks {
       position: absolute;
       top: 40%; }
@@ -228,10 +233,14 @@ iframe {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  cursor: pointer;
+  pointer-events: all;
   background-color: RGBA(51, 122, 183, 1);
   padding: 15px 20px 10px 20px;
   width: 100px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  z-index: 99999;
+  cursor: pointer; }
   #send p {
     width: 100%;
     text-align: center; }
@@ -358,7 +367,11 @@ iframe {
       margin: 0 auto; }
 
   .image-row {
-    padding: 10px 0; }
+    padding: 10px 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)), url(../assets/images/IMG_0542.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed; }
     .image-row h1 {
       font-size: 5rem;
       margin: 15px; }
